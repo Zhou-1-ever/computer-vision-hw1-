@@ -112,7 +112,7 @@ def predict_proba(self, X):
 **数值稳定性技巧**：
 - Softmax计算时减去最大值，防止exp溢出
 
-## 📊 使用示例
+##  使用示例
 
 ### 基本使用
 
@@ -153,7 +153,7 @@ model.save_weights('weights/best_model.npz')
 model.load_weights('weights/best_model.npz')
 ```
 
-## 🔗 与其他模块的配合
+##  与其他模块的配合
 
 ### 与 loss.py 配合
 
@@ -186,7 +186,7 @@ for epoch in range(num_epochs):
     optimizer.step(model, gradients)
 ```
 
-## ⚠️ 注意事项
+##  注意事项
 
 1. **输出层不使用激活函数**
    - 输出原始logits，配合交叉熵损失
